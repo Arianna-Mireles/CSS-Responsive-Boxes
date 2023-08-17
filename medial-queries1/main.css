@@ -3,10 +3,26 @@ body {
 }
 
 * {
-  border: 1px solid black;
+  border: 1px solid teal;
 }
 
-.a, .c {
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* class solution */
+header, footer {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 3;
+}
+
+/* .a {
   width: 100%;
   height: 500px;
   background-color: rgb(201, 184, 233);
@@ -16,30 +32,25 @@ body {
   width: 958px;
   height: 1000px;
   background-color: rgb(241, 195, 202);
+  flex-grow: 4;
 }
 
-/* .c {
+.c {
   width: 100%;
   height: 500px;
   background-color: rgb(235, 218, 171);
+  flex-grow: 3;
 } */
-
-.container {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 @media (max-width: 600px) {
   .container {
     flex-direction: row;
-    flex-wrap:- wrap;
+    flex-wrap: wrap;
     }
-  .b {
-    width: 60%;
+  header {
+    width: 100%;
   }
-  .c {
-    width: 40%;
+  main, footer, header {
+    margin: 1em;
   }
 }
