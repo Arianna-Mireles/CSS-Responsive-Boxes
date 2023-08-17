@@ -24,16 +24,11 @@ body {
   background-color: rgb(235, 218, 171);
 }
 
-/* .container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} */
-
-/* .b .c {
-  display: flex;
-  justify-content: space-between;
-} */
+}
 
 @media (max-width: 600px) {
   .container {
